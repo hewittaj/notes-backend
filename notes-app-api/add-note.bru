@@ -1,0 +1,15 @@
+meta {
+  name: add-note
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3001/api/notes/
+  body: json
+  auth: none
+}
+
+body:json {
+  {"content": "Bruno is good in testing backend.", "important": true}
+}
