@@ -1,23 +1,23 @@
 {
-	"name": "practice",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon --inspect index.js",
-		"test": "echo \"Error: No test specified\" && exit 1",
-		"build:ui": "rm -rf dist && cd ../notes-frontend && npm run build && cp -r dist ../notes-backend",
-		"deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
-	},
-	"author": "Alex Hewitt",
-	"license": "MIT",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.19.2",
-		"mongoose": "^8.3.0"
-	},
-	"devDependencies": {
-		"nodemon": "^3.1.0"
-	}
+    "name": "practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon --inspect index.js F2Tjm8epW6sTyUO9",
+        "test": "echo \"Error: No test specified\" && exit 1",
+        "build:ui": "rm -rf dist && cd ../notes-frontend && npm run build && cp -r dist ../notes-backend",
+        "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    },
+    "author": "Alex Hewitt",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "mongoose": "^8.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    }
 }
