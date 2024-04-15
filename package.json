@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon --inspect index.js F2Tjm8epW6sTyUO9",
+        "dev": "nodemon --inspect index.js",
         "test": "echo \"Error: No test specified\" && exit 1",
         "build:ui": "rm -rf dist && cd ../notes-frontend && npm run build && cp -r dist ../notes-backend",
         "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
