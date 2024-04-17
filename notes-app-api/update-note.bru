@@ -1,0 +1,21 @@
+meta {
+  name: update-note
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3001/api/notes/661005deb2cde7c1d824f568
+  body: json
+  auth: none
+}
+
+query {
+  : 
+}
+
+body:json {
+  {
+    "important": true
+  }
+}
