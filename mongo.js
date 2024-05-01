@@ -10,9 +10,7 @@ const password = process.argv[2]
 const url = `mongodb+srv://alexhewitt:${password}@cluster0.pxl1wm5.mongodb.net/testNoteApp?retryWrites=true&w=majority&appName=Cluster1`
 
 mongoose.set('strictQuery', false)
-
 mongoose.connect(url)
-
 const noteSchema = new mongoose.Schema({
   content: String,
   important: 'bool'
@@ -20,15 +18,15 @@ const noteSchema = new mongoose.Schema({
 
 const Note = mongoose.model('Note', noteSchema)
 
-const note = new Note({
-  content: 'JavaScript is easy',
-  important: true
-})
+// const note = new Note({
+//   content: 'JavaScript is easy',
+//   important: true
+// })
 
-note.save().then((result) => {
-  console.log('note saved!')
-  mongoose.connection.close()
-})
+// note.save().then((result) => {
+//   console.log('note saved!')
+//   mongoose.connection.close()
+// })
 Note.find({}).then((result) => {
   result.forEach((note) => {
     console.log(note)
